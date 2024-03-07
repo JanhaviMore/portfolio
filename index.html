@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68604e83a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a herf="#">Home</a></li>
+                    <li><a herf="#">About</a></li>
+                    <li><a herf="#">Resume</a></li>
+                    <li><a herf="#">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+
+                <h1> Hi, i'm <span>Janhavi More </span> <br> From Chhatrapati Sambhajinagar</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aboutme.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p> Hello I'm Janhavi More and currently perciving B.Tech 3 <sup>rd</sup> year from Electronics & Computer
+                        Engineering department in chhatrapati
+                        Shahu college of Engineering, Kanchanwadi Chhatrapati Sambhajinagar.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Devepment</span><br>Designing Web/App interfaces</li>
+                            <li><span>Java </span><br>Java-based applications </li>
+                            <li><span>Python </span><br>Develop projects in python langauge</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - current </span><br>perciving B.tech in third year</li>
+                        <li><span>2023</span><br>College level Experience</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Currently perciving B.tech </li>
+
+                    </ul>
+                </div>
+                <a href=" " class="btn btn2">Download Resume</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                    <h2>Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i> morejanhavi444@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8208146350</p>
+                <div class="social-icons">
+                    <br>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
